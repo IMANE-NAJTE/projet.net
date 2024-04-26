@@ -47,6 +47,7 @@
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(100, 20);
             this.password.TabIndex = 1;
+            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
             // 
             // button1
             // 
@@ -62,7 +63,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(666, 357);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.password);
             this.Controls.Add(this.email);

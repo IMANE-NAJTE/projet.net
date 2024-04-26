@@ -26,12 +26,13 @@ namespace Projet_GestionCongee
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
-		
-    #region Définitions de méthodes d'extensibilité
-    partial void OnCreated();
-    #endregion
-		
-		public ClassDBDataContext(string connection) : 
+        internal object personne;
+
+        #region Définitions de méthodes d'extensibilité
+        partial void OnCreated();
+        #endregion
+        
+        public ClassDBDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
@@ -55,9 +56,7 @@ namespace Projet_GestionCongee
 			OnCreated();
 		}
 
-        public ClassDBDataContext()
-        {
-        }
+        
     }
 }
 #pragma warning restore 1591

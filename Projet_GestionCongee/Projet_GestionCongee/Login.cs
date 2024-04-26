@@ -24,17 +24,31 @@ namespace Projet_GestionCongee
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Récupérer le texte saisi dans les zones de texte
-            string emailText = email.Text;
-            string passwordText = password.Text;
+            String n =email.Text;
+            String p = password.Text;
 
-            // Utiliser les valeurs récupérées (vous pouvez faire ce que vous voulez avec ces valeurs)
-            Console.Write("Email: " + emailText);
-            Console.WriteLine("Password: " + passwordText);
-           
+            using (gs_CongeeDataContext db = new gs_CongeeDataContext())
+            {
+                // Exécuter une requête LINQ pour récupérer des données
+                var result = from c in db.personne
+                             where c.email == n
+                             select c;
+
+                // Parcourir les résultats
+                foreach (var item in result)
+                {
+                    Console.WriteLine($"Colonne1: {item.nom}, Colonne2: {item.role}");
+                }
+
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void password_TextChanged(object sender, EventArgs e)
         {
 
         }
