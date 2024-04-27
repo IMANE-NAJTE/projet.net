@@ -64,7 +64,7 @@
             this.Connexion.ForeColor = System.Drawing.Color.White;
             this.Connexion.Location = new System.Drawing.Point(105, 283);
             this.Connexion.Name = "Connexion";
-            this.Connexion.Size = new System.Drawing.Size(78, 30);
+            this.Connexion.Size = new System.Drawing.Size(102, 30);
             this.Connexion.TabIndex = 2;
             this.Connexion.Text = "Connexion";
             this.Connexion.UseVisualStyleBackColor = false;
@@ -115,7 +115,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.ForeColor = System.Drawing.Color.Aqua;
-            this.checkBox1.Location = new System.Drawing.Point(200, 257);
+            this.checkBox1.Location = new System.Drawing.Point(182, 232);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(99, 17);
             this.checkBox1.TabIndex = 6;

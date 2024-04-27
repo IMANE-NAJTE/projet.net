@@ -55,11 +55,23 @@
     <Compile Include="Classe Metier\Demande.cs" />
     <Compile Include="Classe Metier\Departement.cs" />
     <Compile Include="Classe Metier\Personne.cs" />
+    <Compile Include="GUI\AdminGUI\AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AdminGUI\AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\AdminGUI\AfficheDemande.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\AdminGUI\AfficheDemande.Designer.cs">
       <DependentUpon>AfficheDemande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AdminGUI\Historique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AdminGUI\Historique.Designer.cs">
+      <DependentUpon>Historique.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\EmployeGUI\DemandePage.cs">
       <SubType>Form</SubType>
@@ -80,6 +92,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\AdminGUI\AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\EmployeGUI\DemandePage.resx">
       <DependentUpon>DemandePage.cs</DependentUpon>
     </EmbeddedResource>

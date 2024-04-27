@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projet_GestionCongee.GUI.AdminGUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Projet_GestionCongee
 {
@@ -48,18 +50,17 @@ namespace Projet_GestionCongee
 
                 if (role == "admin")
                 {
-                            DemandePage form2 = new DemandePage();
-
-                            form2.Show();
+                            AdminHome F =new  AdminHome();
+                            F.Show();
                             this.Hide();
                         }
                 else
                 {
-                            AdminHome form2 = new AdminHome();
-                            
+                            DemandePage form2 = new DemandePage();
+
                             form2.Show();
                             this.Hide();
-                        }
+                }
 
                 
                 
@@ -72,16 +73,19 @@ namespace Projet_GestionCongee
     }
 }
 
-
-                
-
+      
 
 
-              
-                // Parcourir les résultats
 
 
-            }
+
+
+
+
+        // Parcourir les résultats
+
+
+    }
         }
 
 

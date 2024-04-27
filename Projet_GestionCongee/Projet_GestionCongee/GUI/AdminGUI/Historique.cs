@@ -16,10 +16,5 @@ namespace Projet_GestionCongee.GUI.AdminGUI
         {
             InitializeComponent();
         }
-
-        private void Historique_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
