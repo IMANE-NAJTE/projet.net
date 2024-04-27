@@ -11,7 +11,7 @@ namespace Projet_GestionCongee.Classe_Metier
         // Attributs
         private string nom;
         private string prenom;
-        static private int id;
+        private int id;
         private string role;
         private string email;
         private string password;
@@ -23,7 +23,7 @@ namespace Projet_GestionCongee.Classe_Metier
         {
             this.nom = nom;
             this.prenom = prenom;
-            Personne.id = id;
+            this.id = id;
             this.role = role;
             this.email = email;
             this.password = password;

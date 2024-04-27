@@ -22,35 +22,63 @@ namespace Projet_GestionCongee
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+      private void button1_Click(object sender, EventArgs e)
+{
+    String n = email.Text;
+    String p = password.Text;
+
+    using (gs_CongeeDataContext db = new gs_CongeeDataContext())
+    {
+        if (string.IsNullOrEmpty(n) || string.IsNullOrEmpty(p))
         {
-            String n =email.Text;
-            String p = password.Text;
+            message.Text = "Il faut remplir tous les champs";
+            message.Visible = true;
+        }
+        else
+        {
+            var result = (from c in db.personne where c.email == n && c.password == p select c).FirstOrDefault();
 
-            using (gs_CongeeDataContext db = new gs_CongeeDataContext())
+            if (result != null)
             {
-                // Exécuter une requête LINQ pour récupérer des données
-                var result = from c in db.personne
-                             where c.email == n
-                             select c;
+                message.Visible = false;
 
-                // Parcourir les résultats
-                foreach (var item in result)
+                // Tu peux accéder aux propriétés de "result" ici
+                int id = result.id;
+                string role = result.role;
+
+                if (role == "admin")
                 {
-                    Console.WriteLine($"Colonne1: {item.nom}, Colonne2: {item.role}");
+                    
                 }
+                else
+                {
+                            DemandePage form2 = new DemandePage();
+                            
+                            form2.Show();
+                            this.Hide();
+                        }
+
+                
+                
+            }
+            else
+            {
+                MessageBox.Show("Email ou mot de passe invalide");
+            }
+        }
+    }
+}
+
+
+                
+
+
+
+              
+                // Parcourir les résultats
+
 
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void password_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-    }
-}
