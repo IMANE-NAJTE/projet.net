@@ -48,11 +48,14 @@ namespace Projet_GestionCongee
 
                 if (role == "admin")
                 {
-                    
-                }
+                            DemandePage form2 = new DemandePage();
+
+                            form2.Show();
+                            this.Hide();
+                        }
                 else
                 {
-                            DemandePage form2 = new DemandePage();
+                            AdminHome form2 = new AdminHome();
                             
                             form2.Show();
                             this.Hide();
