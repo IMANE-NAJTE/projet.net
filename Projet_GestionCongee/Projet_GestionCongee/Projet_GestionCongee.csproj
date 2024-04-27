@@ -55,6 +55,12 @@
     <Compile Include="Classe Metier\Demande.cs" />
     <Compile Include="Classe Metier\Departement.cs" />
     <Compile Include="Classe Metier\Personne.cs" />
+    <Compile Include="GUI\EmployeGUI\DemandePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\EmployeGUI\DemandePage.Designer.cs">
+      <DependentUpon>DemandePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="gs_Congee.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -68,6 +74,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\EmployeGUI\DemandePage.resx">
+      <DependentUpon>DemandePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +88,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDB.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
@@ -111,10 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GUI\AdminGUI\" />
-    <Folder Include="GUI\EmployeGUI\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mot-de-passe.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
