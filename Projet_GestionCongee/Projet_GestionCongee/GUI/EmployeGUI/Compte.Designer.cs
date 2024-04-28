@@ -1,6 +1,6 @@
 ﻿namespace Projet_GestionCongee.GUI.EmployeGUI
 {
-    partial class DemandePage
+    partial class Compte
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DemandePage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Compte));
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.NomU = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -43,6 +43,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -77,7 +78,7 @@
             this.panel3.Location = new System.Drawing.Point(504, 24);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(245, 107);
-            this.panel3.TabIndex = 17;
+            this.panel3.TabIndex = 12;
             // 
             // tableLayoutPanel1
             // 
@@ -91,18 +92,19 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.55678F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.44322F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(645, 273);
-            this.tableLayoutPanel1.TabIndex = 16;
+            this.tableLayoutPanel1.TabIndex = 11;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.NomU);
             this.panel2.Location = new System.Drawing.Point(137, 24);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(245, 107);
-            this.panel2.TabIndex = 15;
+            this.panel2.TabIndex = 10;
             // 
             // pictureBox7
             // 
@@ -186,10 +188,10 @@
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(81, 451);
-            this.panel1.TabIndex = 14;
+            this.panel1.TabIndex = 9;
             // 
             // pictureBox1
             // 
@@ -210,21 +212,32 @@
             this.label1.Location = new System.Drawing.Point(400, 218);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 15);
-            this.label1.TabIndex = 18;
+            this.label1.TabIndex = 13;
             this.label1.Visible = false;
             // 
-            // DemandePage
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(139, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 15);
+            this.label2.TabIndex = 14;
+            this.label2.Visible = false;
+            // 
+            // Compte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
-            this.Name = "DemandePage";
-            this.Text = "DemandePage";
+            this.Name = "Compte";
+            this.Text = "Compte";
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -257,5 +270,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

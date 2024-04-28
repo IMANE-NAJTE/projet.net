@@ -73,16 +73,34 @@
     <Compile Include="GUI\AdminGUI\Historique.Designer.cs">
       <DependentUpon>Historique.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\EmployeGUI\Compte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\EmployeGUI\Compte.Designer.cs">
+      <DependentUpon>Compte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gs_Congee.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gs_Congee.dbml</DependentUpon>
+    </Compile>
     <Compile Include="GUI\EmployeGUI\DemandePage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\EmployeGUI\DemandePage.Designer.cs">
       <DependentUpon>DemandePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="gs_Congee.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>gs_Congee.dbml</DependentUpon>
+    <Compile Include="GUI\EmployeGUI\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\EmployeGUI\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EmployeGUI\MesDemandes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\EmployeGUI\MesDemandes.Designer.cs">
+      <DependentUpon>MesDemandes.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -95,8 +113,17 @@
     <EmbeddedResource Include="GUI\AdminGUI\AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\EmployeGUI\Compte.resx">
+      <DependentUpon>Compte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\EmployeGUI\DemandePage.resx">
       <DependentUpon>DemandePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\EmployeGUI\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\EmployeGUI\MesDemandes.resx">
+      <DependentUpon>MesDemandes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

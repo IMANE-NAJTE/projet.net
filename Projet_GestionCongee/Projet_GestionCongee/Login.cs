@@ -1,4 +1,7 @@
-﻿using Projet_GestionCongee.GUI.AdminGUI;
+﻿using Projet_GestionCongee.Classe_Metier;
+using Projet_GestionCongee.GUI.AdminGUI;
+using Projet_GestionCongee.GUI.EmployeGUI;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,20 +50,28 @@ namespace Projet_GestionCongee
                 // Tu peux accéder aux propriétés de "result" ici
                 int id = result.id;
                 string role = result.role;
+                        new Personne
+                        {
+                            Id = result.id,
+                          
+                        };
 
-                if (role == "admin")
-                {
+                        if (role == "admin")
+                        {
                             AdminHome F =new  AdminHome();
                             F.Show();
                             this.Hide();
+    
                         }
-                else
-                {
-                            DemandePage form2 = new DemandePage();
+  
+                       else
+                       {
+                            Home form2 = new Home();
 
                             form2.Show();
                             this.Hide();
-                }
+                            
+                       }
 
                 
                 
@@ -73,7 +84,26 @@ namespace Projet_GestionCongee
     }
 }
 
-      
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            //ce code permit d'affiche le password
+
+            password.PasswordChar = checkBox1.Checked ? '\0' : '*';
+
+
+        }
+
+
 
 
 

@@ -31,7 +31,9 @@ namespace Projet_GestionCongee.Classe_Metier
             this.grade = grade;
         }
 
+        public Personne() { }
         // Getters et Setters
+       
         public string Nom
         {
             get { return nom; }
@@ -42,6 +44,10 @@ namespace Projet_GestionCongee.Classe_Metier
         {
             get { return prenom; }
             set { prenom = value; }
+        }
+        static public int getId()
+        {
+            return id;
         }
 
         public int Id
