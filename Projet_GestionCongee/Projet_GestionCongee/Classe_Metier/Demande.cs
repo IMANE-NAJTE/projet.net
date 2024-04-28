@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Projet_GestionCongee.Classe_Metier
 {
-    class Demande
+    public class Demande
     {
         // Attributs
         private int id;
@@ -71,7 +71,6 @@ namespace Projet_GestionCongee.Classe_Metier
             get { return certificat; }
             set { certificat = value; }
         }
-
         public List<demande> GetAllDemandes()
         {
             return db.demande.ToList();
@@ -102,6 +101,9 @@ namespace Projet_GestionCongee.Classe_Metier
                             select demande).Take(1000).ToList();
             return demandes;
         }
+
+
+
 
     }
 }

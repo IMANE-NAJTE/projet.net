@@ -342,6 +342,7 @@
             this.vente.TabIndex = 0;
             this.vente.Text = "Vente";
             this.vente.UseVisualStyleBackColor = false;
+            this.vente.Click += new System.EventHandler(this.vente_Click);
             // 
             // groupBox1
             // 
@@ -561,6 +562,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(234, 40);
             this.panel4.TabIndex = 113;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // pictureBox4
             // 

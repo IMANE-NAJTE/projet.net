@@ -38,5 +38,15 @@ namespace Projet_GestionCongee.GUI.AdminGUI
             f.Show();
             this.Hide();
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void vente_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

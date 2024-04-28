@@ -40,6 +40,7 @@ namespace Projet_GestionCongee.Classe_Metier
         }
 
 
+
         public List<bureau> GetBureauFromDatabase()
         {
             return db.bureau.ToList();
@@ -65,5 +66,6 @@ namespace Projet_GestionCongee.Classe_Metier
         }
 
     }
+
 }
 
