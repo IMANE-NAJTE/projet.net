@@ -12,6 +12,7 @@ namespace Projet_GestionCongee.GUI.AdminGUI
 {
     public partial class Historique : Form
     {
+        
 
         gs_CongeeDataContext db;
         Classe_Metier.Demande d = new Classe_Metier.Demande();
@@ -24,6 +25,8 @@ namespace Projet_GestionCongee.GUI.AdminGUI
             db = new gs_CongeeDataContext();
             tabledata.DataBindingComplete += tabledata_DataBindingComplete;
         }
+
+        public static String etatGlobale { get; set; }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -133,6 +136,30 @@ namespace Projet_GestionCongee.GUI.AdminGUI
             RemplirComboBoxBureaux();
             DataTable dataTable = GetDataFromDatabase();
             tabledata.DataSource = dataTable;
+        }
+
+        private void tabledata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void total_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+            HomeAdmin f = new HomeAdmin();
+            f.Show();
+            this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Historique f = new Historique();
+            f.Show();
+            this.Hide();
         }
     }
 }
