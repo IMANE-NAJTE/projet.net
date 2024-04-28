@@ -52,9 +52,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ClassDB.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Classe Metier\Demande.cs" />
-    <Compile Include="Classe Metier\Departement.cs" />
-    <Compile Include="Classe Metier\Personne.cs" />
+    <Compile Include="Classe_Metier\Demande.cs" />
+    <Compile Include="Classe_Metier\Departement.cs" />
+    <Compile Include="Classe_Metier\Personne.cs" />
     <Compile Include="GUI\AdminGUI\AdminHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +112,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\AdminGUI\AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AdminGUI\Historique.resx">
+      <DependentUpon>Historique.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\EmployeGUI\Compte.resx">
       <DependentUpon>Compte.cs</DependentUpon>

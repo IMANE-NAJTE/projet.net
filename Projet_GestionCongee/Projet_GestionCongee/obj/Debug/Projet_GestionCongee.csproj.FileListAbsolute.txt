@@ -39,7 +39,6 @@ C:\Users\Minfo\Desktop\projet.net\Projet_GestionCongee\Projet_GestionCongee\obj\
 C:\Users\Minfo\Desktop\projet.net\Projet_GestionCongee\Projet_GestionCongee\obj\Debug\Projet_GestionCongee.exe
 C:\Users\Minfo\Desktop\projet.net\Projet_GestionCongee\Projet_GestionCongee\obj\Debug\Projet_GestionCongee.pdb
 C:\Users\po\OneDrive\Bureau\Projet.NET\Projet_GestionCongee\Projet_GestionCongee\obj\Debug\Projet_GestionCongee.GUI.AdminGUI.AdminHome.resources
-C:\Users\po\OneDrive\Bureau\Projet.NET\Projet_GestionCongee\Projet_GestionCongee\obj\Debug\Projet_GestionCongee.DemandePage.resources
 C:\Users\Minfo\Desktop\PROJ.net\Projet_GestionCongee\Projet_GestionCongee\bin\Debug\Projet_GestionCongee.exe.config
 C:\Users\Minfo\Desktop\PROJ.net\Projet_GestionCongee\Projet_GestionCongee\bin\Debug\Projet_GestionCongee.exe
 C:\Users\Minfo\Desktop\PROJ.net\Projet_GestionCongee\Projet_GestionCongee\bin\Debug\Projet_GestionCongee.pdb
@@ -55,3 +54,8 @@ C:\Users\Minfo\Desktop\PROJ.net\Projet_GestionCongee\Projet_GestionCongee\obj\De
 C:\Users\Minfo\Desktop\PROJ.net\Projet_GestionCongee\Projet_GestionCongee\obj\Debug\Projet_GestionCongee.GUI.EmployeGUI.Home.resources
 C:\Users\Minfo\Desktop\PROJ.net\Projet_GestionCongee\Projet_GestionCongee\obj\Debug\Projet_GestionCongee.GUI.EmployeGUI.MesDemandes.resources
 C:\Users\Minfo\Desktop\PROJ.net\Projet_GestionCongee\Projet_GestionCongee\obj\Debug\Projet_GestionCongee.GUI.EmployeGUI.DemandePage.resources
+C:\Users\po\OneDrive\Bureau\Projet.NET\Projet_GestionCongee\Projet_GestionCongee\obj\Debug\Projet_GestionCongee.GUI.EmployeGUI.Compte.resources
+C:\Users\po\OneDrive\Bureau\Projet.NET\Projet_GestionCongee\Projet_GestionCongee\obj\Debug\Projet_GestionCongee.GUI.EmployeGUI.DemandePage.resources
+C:\Users\po\OneDrive\Bureau\Projet.NET\Projet_GestionCongee\Projet_GestionCongee\obj\Debug\Projet_GestionCongee.GUI.EmployeGUI.Home.resources
+C:\Users\po\OneDrive\Bureau\Projet.NET\Projet_GestionCongee\Projet_GestionCongee\obj\Debug\Projet_GestionCongee.GUI.EmployeGUI.MesDemandes.resources
+C:\Users\po\OneDrive\Bureau\Projet.NET\Projet_GestionCongee\Projet_GestionCongee\obj\Debug\Projet_GestionCongee.GUI.AdminGUI.Historique.resources

@@ -18,11 +18,12 @@ namespace Projet_GestionCongee.Classe_Metier
         private DateTime date_debut;
         private string grade;
 
+        gs_CongeeDataContext db;
 
-        gs_CongeeDataContext db=new gs_CongeeDataContext();
-
-       
-
+        public Personne()
+        {
+            db = new gs_CongeeDataContext();
+        }
 
         // Constructeur
         public Personne(string nom, string prenom, int id, string role, string email, string password, DateTime date_debut, string grade)
@@ -37,9 +38,7 @@ namespace Projet_GestionCongee.Classe_Metier
             this.grade = grade;
         }
 
-        public Personne() { }
         // Getters et Setters
-       
         public string Nom
         {
             get { return nom; }
@@ -50,10 +49,6 @@ namespace Projet_GestionCongee.Classe_Metier
         {
             get { return prenom; }
             set { prenom = value; }
-        }
-        static public int getId()
-        {
-            return id;
         }
 
         public int Id
@@ -66,6 +61,11 @@ namespace Projet_GestionCongee.Classe_Metier
         {
             get { return role; }
             set { role = value; }
+        }
+
+        static public int getId()
+        {
+            return id;
         }
 
         public string Email
