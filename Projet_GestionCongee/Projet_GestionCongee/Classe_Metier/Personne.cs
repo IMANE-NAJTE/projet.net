@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet_GestionCongee.Classe_Metier
 {
-    class Personne
+    public class Personne
     {
         // Attributs
         private string nom;
@@ -18,7 +18,7 @@ namespace Projet_GestionCongee.Classe_Metier
         private DateTime date_debut;
         private string grade;
 
-        gs_CongeeDataContext db;
+        private gs_CongeeDataContext db;
 
         public Personne()
         {
@@ -95,44 +95,55 @@ namespace Projet_GestionCongee.Classe_Metier
 
         public List<personne> GetPersonnesFromDatabase()
         {
-            return (from personne in db.personne
-                    select personne).ToList();
-
+            return (from p in db.personne select p).ToList();
         }
 
         public List<personne> GetPersonnesByRole(string role)
         {
-            using (var db = new gs_CongeeDataContext())
-            {
-                return db.personne.Where(p => p.role == role).ToList();
-            }
+            return (from p in db.personne where p.role == role select p).ToList();
         }
 
         public personne GetPersonneById(int id)
         {
-            using (var db = new gs_CongeeDataContext())
-            {
-                return db.personne.FirstOrDefault(p => p.id == id);
-            }
+            return (from c in db.personne where c.id == id select c).FirstOrDefault();
+
+            
         }
+
+
 
         public personne GetPersonneByEmail(string email)
         {
-            using (var db = new gs_CongeeDataContext())
-            {
-                return db.personne.FirstOrDefault(p => p.email == email);
-            }
+            return (from p in db.personne where p.email == email select p).FirstOrDefault();
         }
 
         public personne GetPersonneByNomPrenom(string nom, string prenom)
         {
-            using (var db = new gs_CongeeDataContext())
-            {
-                return db.personne.FirstOrDefault(p => p.nom == nom && p.prenom == prenom);
-            }
+            return (from p in db.personne where p.nom == nom && p.prenom == prenom select p).FirstOrDefault();
+        }
+        public void UpdatePersonne(int id,string email,string pass)
+        {
+               
+                    var utilisateur = db.personne.FirstOrDefault(p => p.id == id);
+
+                    if (utilisateur != null)
+                    {
+                        utilisateur.email = email;
+                        utilisateur.password = pass;
+
+                        db.SubmitChanges();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Utilisateur introuvable avec l'ID : " + id);
+                    }
+             
+
         }
 
 
-
     }
+
+
 }
+
