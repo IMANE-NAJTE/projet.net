@@ -47,7 +47,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.dep = new System.Windows.Forms.Label();
+            this.NomU = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -71,6 +72,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.NomU);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Location = new System.Drawing.Point(180, 12);
@@ -105,7 +107,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.dep);
             this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Location = new System.Drawing.Point(496, 12);
             this.panel3.Name = "panel3";
@@ -268,17 +270,29 @@
             this.pictureBox8.TabIndex = 18;
             this.pictureBox8.TabStop = false;
             // 
-            // label6
+            // dep
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(116, 36);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 18);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Home";
+            this.dep.AutoSize = true;
+            this.dep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dep.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dep.ForeColor = System.Drawing.Color.White;
+            this.dep.Location = new System.Drawing.Point(95, 42);
+            this.dep.Name = "dep";
+            this.dep.Size = new System.Drawing.Size(0, 18);
+            this.dep.TabIndex = 19;
+            this.dep.Visible = false;
+            // 
+            // NomU
+            // 
+            this.NomU.AutoSize = true;
+            this.NomU.BackColor = System.Drawing.Color.Teal;
+            this.NomU.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomU.ForeColor = System.Drawing.Color.White;
+            this.NomU.Location = new System.Drawing.Point(87, 46);
+            this.NomU.Name = "NomU";
+            this.NomU.Size = new System.Drawing.Size(0, 18);
+            this.NomU.TabIndex = 10;
+            this.NomU.Visible = false;
             // 
             // Home
             // 
@@ -330,8 +344,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label dep;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label NomU;
     }
 }

@@ -62,47 +62,53 @@ namespace Projet_GestionCongee.GUI.EmployeGUI
 
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            Home form2 = new Home();
+   
 
-            form2.Show();
-            this.Hide();
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
+
             DemandePage form2 = new DemandePage();
 
             form2.Show();
             this.Hide();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
+
             MesDemandes form2 = new MesDemandes();
 
             form2.Show();
             this.Hide();
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
+
             Compte form2 = new Compte();
 
             form2.Show();
             this.Hide();
-
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
         {
+
             Login form2 = new Login();
 
             form2.Show();
             this.Hide();
         }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+           Home form2 = new Home();
+
+            form2.Show();
+            this.Hide();
+        }
     }
 }
 
