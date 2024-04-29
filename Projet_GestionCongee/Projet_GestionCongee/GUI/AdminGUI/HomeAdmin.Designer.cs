@@ -40,7 +40,30 @@
             this.label16 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.l_inf = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.l_f = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.l_s = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.l_rh = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.production = new System.Windows.Forms.Label();
+            this.l_pr = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.l_vente = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Panel2 = new System.Windows.Forms.Panel();
@@ -59,29 +82,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label_encours = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.l_vente = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.production = new System.Windows.Forms.Label();
-            this.l_pr = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.l_rh = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.l_f = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.l_inf = new System.Windows.Forms.Label();
             this.con.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -90,6 +90,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -99,18 +111,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SuspendLayout();
             // 
             // con
@@ -250,6 +250,143 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Les demande réçu en département";
             // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Teal;
+            this.panel11.Controls.Add(this.pictureBox15);
+            this.panel11.Controls.Add(this.label15);
+            this.panel11.Controls.Add(this.l_inf);
+            this.panel11.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.panel11.Location = new System.Drawing.Point(422, 175);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(260, 43);
+            this.panel11.TabIndex = 131;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 118;
+            this.pictureBox15.TabStop = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Teal;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label15.Location = new System.Drawing.Point(97, 13);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(101, 18);
+            this.label15.TabIndex = 112;
+            this.label15.Text = "Informatique";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
+            // 
+            // l_inf
+            // 
+            this.l_inf.AutoSize = true;
+            this.l_inf.BackColor = System.Drawing.Color.Teal;
+            this.l_inf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_inf.ForeColor = System.Drawing.Color.Red;
+            this.l_inf.Location = new System.Drawing.Point(232, 13);
+            this.l_inf.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.l_inf.Name = "l_inf";
+            this.l_inf.Size = new System.Drawing.Size(26, 18);
+            this.l_inf.TabIndex = 124;
+            this.l_inf.Text = "12";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Teal;
+            this.panel10.Controls.Add(this.pictureBox14);
+            this.panel10.Controls.Add(this.label13);
+            this.panel10.Controls.Add(this.l_f);
+            this.panel10.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.panel10.Location = new System.Drawing.Point(25, 188);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(260, 43);
+            this.panel10.TabIndex = 130;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 118;
+            this.pictureBox14.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Teal;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label13.Location = new System.Drawing.Point(78, 13);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(76, 18);
+            this.label13.TabIndex = 112;
+            this.label13.Text = "Finances";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // l_f
+            // 
+            this.l_f.AutoSize = true;
+            this.l_f.BackColor = System.Drawing.Color.Teal;
+            this.l_f.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_f.ForeColor = System.Drawing.Color.Red;
+            this.l_f.Location = new System.Drawing.Point(232, 13);
+            this.l_f.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.l_f.Name = "l_f";
+            this.l_f.Size = new System.Drawing.Size(26, 18);
+            this.l_f.TabIndex = 124;
+            this.l_f.Text = "12";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Teal;
+            this.panel9.Controls.Add(this.pictureBox13);
+            this.panel9.Controls.Add(this.label11);
+            this.panel9.Controls.Add(this.l_s);
+            this.panel9.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.panel9.Location = new System.Drawing.Point(424, 101);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(260, 43);
+            this.panel9.TabIndex = 129;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 118;
+            this.pictureBox13.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Teal;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label11.Location = new System.Drawing.Point(77, 14);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(131, 18);
+            this.label11.TabIndex = 112;
+            this.label11.Text = "Service clientèle";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
             // l_s
             // 
             this.l_s.AutoSize = true;
@@ -263,6 +400,155 @@
             this.l_s.TabIndex = 124;
             this.l_s.Text = "12";
             this.l_s.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Teal;
+            this.panel8.Controls.Add(this.pictureBox12);
+            this.panel8.Controls.Add(this.label9);
+            this.panel8.Controls.Add(this.l_rh);
+            this.panel8.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.panel8.Location = new System.Drawing.Point(24, 101);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(260, 43);
+            this.panel8.TabIndex = 128;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 118;
+            this.pictureBox12.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Teal;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label9.Location = new System.Drawing.Point(47, 12);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(181, 18);
+            this.label9.TabIndex = 112;
+            this.label9.Text = "Ressources humaines ";
+            this.label9.Click += new System.EventHandler(this.label9_Click_1);
+            // 
+            // l_rh
+            // 
+            this.l_rh.AutoSize = true;
+            this.l_rh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_rh.ForeColor = System.Drawing.Color.Red;
+            this.l_rh.Location = new System.Drawing.Point(233, 14);
+            this.l_rh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.l_rh.Name = "l_rh";
+            this.l_rh.Size = new System.Drawing.Size(26, 17);
+            this.l_rh.TabIndex = 9;
+            this.l_rh.Text = "12";
+            this.l_rh.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Teal;
+            this.panel7.Controls.Add(this.pictureBox7);
+            this.panel7.Controls.Add(this.production);
+            this.panel7.Controls.Add(this.l_pr);
+            this.panel7.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.panel7.Location = new System.Drawing.Point(428, 34);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(259, 43);
+            this.panel7.TabIndex = 128;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 118;
+            this.pictureBox7.TabStop = false;
+            // 
+            // production
+            // 
+            this.production.AutoSize = true;
+            this.production.BackColor = System.Drawing.Color.Teal;
+            this.production.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.production.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.production.Location = new System.Drawing.Point(88, 12);
+            this.production.Name = "production";
+            this.production.Size = new System.Drawing.Size(90, 18);
+            this.production.TabIndex = 112;
+            this.production.Text = "Production";
+            this.production.Click += new System.EventHandler(this.production_Click);
+            // 
+            // l_pr
+            // 
+            this.l_pr.AutoSize = true;
+            this.l_pr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_pr.ForeColor = System.Drawing.Color.Red;
+            this.l_pr.Location = new System.Drawing.Point(231, 13);
+            this.l_pr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.l_pr.Name = "l_pr";
+            this.l_pr.Size = new System.Drawing.Size(26, 17);
+            this.l_pr.TabIndex = 9;
+            this.l_pr.Text = "12";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Teal;
+            this.panel6.Controls.Add(this.pictureBox6);
+            this.panel6.Controls.Add(this.label5);
+            this.panel6.Controls.Add(this.l_vente);
+            this.panel6.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.panel6.Location = new System.Drawing.Point(29, 34);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(259, 43);
+            this.panel6.TabIndex = 127;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 118;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Teal;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label5.Location = new System.Drawing.Point(104, 11);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 18);
+            this.label5.TabIndex = 112;
+            this.label5.Text = "Vente";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // l_vente
+            // 
+            this.l_vente.AutoSize = true;
+            this.l_vente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_vente.ForeColor = System.Drawing.Color.Red;
+            this.l_vente.Location = new System.Drawing.Point(231, 14);
+            this.l_vente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.l_vente.Name = "l_vente";
+            this.l_vente.Size = new System.Drawing.Size(26, 17);
+            this.l_vente.TabIndex = 9;
+            this.l_vente.Text = "12";
+            this.l_vente.Click += new System.EventHandler(this.label6_Click);
             // 
             // label4
             // 
@@ -481,288 +767,6 @@
             this.label_encours.TabIndex = 9;
             this.label_encours.Text = "12";
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Teal;
-            this.panel6.Controls.Add(this.pictureBox6);
-            this.panel6.Controls.Add(this.label5);
-            this.panel6.Controls.Add(this.l_vente);
-            this.panel6.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.panel6.Location = new System.Drawing.Point(29, 34);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(259, 43);
-            this.panel6.TabIndex = 127;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 118;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Teal;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label5.Location = new System.Drawing.Point(104, 11);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 18);
-            this.label5.TabIndex = 112;
-            this.label5.Text = "Vente";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // l_vente
-            // 
-            this.l_vente.AutoSize = true;
-            this.l_vente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_vente.ForeColor = System.Drawing.Color.Red;
-            this.l_vente.Location = new System.Drawing.Point(231, 14);
-            this.l_vente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.l_vente.Name = "l_vente";
-            this.l_vente.Size = new System.Drawing.Size(26, 17);
-            this.l_vente.TabIndex = 9;
-            this.l_vente.Text = "12";
-            this.l_vente.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Teal;
-            this.panel7.Controls.Add(this.pictureBox7);
-            this.panel7.Controls.Add(this.production);
-            this.panel7.Controls.Add(this.l_pr);
-            this.panel7.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.panel7.Location = new System.Drawing.Point(428, 34);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(259, 43);
-            this.panel7.TabIndex = 128;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 118;
-            this.pictureBox7.TabStop = false;
-            // 
-            // production
-            // 
-            this.production.AutoSize = true;
-            this.production.BackColor = System.Drawing.Color.Teal;
-            this.production.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.production.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.production.Location = new System.Drawing.Point(88, 12);
-            this.production.Name = "production";
-            this.production.Size = new System.Drawing.Size(90, 18);
-            this.production.TabIndex = 112;
-            this.production.Text = "Production";
-            // 
-            // l_pr
-            // 
-            this.l_pr.AutoSize = true;
-            this.l_pr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_pr.ForeColor = System.Drawing.Color.Red;
-            this.l_pr.Location = new System.Drawing.Point(231, 13);
-            this.l_pr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.l_pr.Name = "l_pr";
-            this.l_pr.Size = new System.Drawing.Size(26, 17);
-            this.l_pr.TabIndex = 9;
-            this.l_pr.Text = "12";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Teal;
-            this.panel8.Controls.Add(this.pictureBox12);
-            this.panel8.Controls.Add(this.label9);
-            this.panel8.Controls.Add(this.l_rh);
-            this.panel8.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.panel8.Location = new System.Drawing.Point(24, 101);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(260, 43);
-            this.panel8.TabIndex = 128;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 118;
-            this.pictureBox12.TabStop = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Teal;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label9.Location = new System.Drawing.Point(47, 12);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(181, 18);
-            this.label9.TabIndex = 112;
-            this.label9.Text = "Ressources humaines ";
-            this.label9.Click += new System.EventHandler(this.label9_Click_1);
-            // 
-            // l_rh
-            // 
-            this.l_rh.AutoSize = true;
-            this.l_rh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_rh.ForeColor = System.Drawing.Color.Red;
-            this.l_rh.Location = new System.Drawing.Point(233, 14);
-            this.l_rh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.l_rh.Name = "l_rh";
-            this.l_rh.Size = new System.Drawing.Size(26, 17);
-            this.l_rh.TabIndex = 9;
-            this.l_rh.Text = "12";
-            this.l_rh.Click += new System.EventHandler(this.label10_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Teal;
-            this.panel9.Controls.Add(this.pictureBox13);
-            this.panel9.Controls.Add(this.label11);
-            this.panel9.Controls.Add(this.l_s);
-            this.panel9.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.panel9.Location = new System.Drawing.Point(424, 101);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(260, 43);
-            this.panel9.TabIndex = 129;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 118;
-            this.pictureBox13.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Teal;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label11.Location = new System.Drawing.Point(77, 14);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(131, 18);
-            this.label11.TabIndex = 112;
-            this.label11.Text = "Service clientèle";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Teal;
-            this.panel10.Controls.Add(this.pictureBox14);
-            this.panel10.Controls.Add(this.label13);
-            this.panel10.Controls.Add(this.l_f);
-            this.panel10.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.panel10.Location = new System.Drawing.Point(25, 188);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(260, 43);
-            this.panel10.TabIndex = 130;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 118;
-            this.pictureBox14.TabStop = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Teal;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label13.Location = new System.Drawing.Point(78, 13);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 18);
-            this.label13.TabIndex = 112;
-            this.label13.Text = "Finances";
-            // 
-            // l_f
-            // 
-            this.l_f.AutoSize = true;
-            this.l_f.BackColor = System.Drawing.Color.Teal;
-            this.l_f.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_f.ForeColor = System.Drawing.Color.Red;
-            this.l_f.Location = new System.Drawing.Point(232, 13);
-            this.l_f.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.l_f.Name = "l_f";
-            this.l_f.Size = new System.Drawing.Size(26, 18);
-            this.l_f.TabIndex = 124;
-            this.l_f.Text = "12";
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.Teal;
-            this.panel11.Controls.Add(this.pictureBox15);
-            this.panel11.Controls.Add(this.label15);
-            this.panel11.Controls.Add(this.l_inf);
-            this.panel11.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.panel11.Location = new System.Drawing.Point(422, 175);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(260, 43);
-            this.panel11.TabIndex = 131;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 118;
-            this.pictureBox15.TabStop = false;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Teal;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label15.Location = new System.Drawing.Point(97, 13);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(101, 18);
-            this.label15.TabIndex = 112;
-            this.label15.Text = "Informatique";
-            // 
-            // l_inf
-            // 
-            this.l_inf.AutoSize = true;
-            this.l_inf.BackColor = System.Drawing.Color.Teal;
-            this.l_inf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_inf.ForeColor = System.Drawing.Color.Red;
-            this.l_inf.Location = new System.Drawing.Point(232, 13);
-            this.l_inf.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.l_inf.Name = "l_inf";
-            this.l_inf.Size = new System.Drawing.Size(26, 18);
-            this.l_inf.TabIndex = 124;
-            this.l_inf.Text = "12";
-            // 
             // HomeAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -783,6 +787,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.Panel2.ResumeLayout(false);
             this.Panel2.PerformLayout();
@@ -796,24 +818,6 @@
             this.Panel3.ResumeLayout(false);
             this.Panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
 
         }

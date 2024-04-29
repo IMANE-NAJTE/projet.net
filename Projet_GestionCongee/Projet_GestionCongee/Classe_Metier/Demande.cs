@@ -88,6 +88,16 @@ namespace Projet_GestionCongee.Classe_Metier
             return db.demande.Where(d => d.etat == etat).ToList();
         }
 
+        public List<demande> GetDemandesByConditionEB(string etat,int bureauId)
+        {
+            var demandes = (from demande in db.demande
+                            join personne in db.personne on demande.id_pers equals personne.id
+                            where personne.id_B == bureauId
+                            where demande.etat == etat
+                            select demande ).ToList();
+            return demandes;
+        }
+
         public List<demande> GetDemandesBetweenDates(DateTime dateDebut, DateTime dateFin)
         {
             return db.demande.Where(d => d.date_d >= dateDebut && d.date_f <= dateFin).ToList();

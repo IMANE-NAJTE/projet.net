@@ -18,15 +18,18 @@ namespace Projet_GestionCongee.GUI.AdminGUI
         Classe_Metier.Demande d = new Classe_Metier.Demande();
         Classe_Metier.Personne p = new Classe_Metier.Personne();
         Classe_Metier.Departement b = new Classe_Metier.Departement();
-        static int bureauId = -1;
+        public static int bureauId { get; set; } 
+        public static string etatGlobale { get; set; } 
+
         public Historique()
         {
             InitializeComponent();
+            Console.WriteLine("Bonjour ddddddddddddddddddd");
             db = new gs_CongeeDataContext();
             tabledata.DataBindingComplete += tabledata_DataBindingComplete;
         }
 
-        public static String etatGlobale { get; set; }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -96,14 +99,23 @@ namespace Projet_GestionCongee.GUI.AdminGUI
         {
             int nb_d = 0;
             List<demande> demandes;
-            if (bureauId < 0)
+            Console.Write(bureauId);
+            Console.Write(etatGlobale);
+            if (bureauId < 0 & etatGlobale=="None")
             {
                 // Effectuez une requête LINQ pour récupérer les données de la table Demande avec les noms de personne
                 demandes = d.GetAllDemandes();
             }
-            else
+            else if (bureauId>0 & etatGlobale == "None")
             {
                 demandes = d.GetDemandesBureauById(bureauId);
+            }
+            else if(etatGlobale!="None" & bureauId<0){
+                demandes = d.GetDemandesByCondition(etatGlobale);
+            }
+            else
+            {
+                demandes = d.GetDemandesByConditionEB(etatGlobale, bureauId);
             }
             DataTable table = new DataTable();
             table.Columns.Add("id", typeof(int)); // Colonne pour l'ID
@@ -133,6 +145,7 @@ namespace Projet_GestionCongee.GUI.AdminGUI
 
         private void Historique_Load(object sender, EventArgs e)
         {
+            
             RemplirComboBoxBureaux();
             DataTable dataTable = GetDataFromDatabase();
             tabledata.DataSource = dataTable;
@@ -157,8 +170,18 @@ namespace Projet_GestionCongee.GUI.AdminGUI
 
         private void label4_Click(object sender, EventArgs e)
         {
+            Historique.etatGlobale = "None";
+            Historique.bureauId = -1;
             Historique f = new Historique();
             f.Show();
+            this.Hide();
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Login form2 = new Login();
+
+            form2.Show();
             this.Hide();
         }
     }

@@ -103,6 +103,11 @@ namespace Projet_GestionCongee.Classe_Metier
             return (from p in db.personne where p.role == role select p).ToList();
         }
 
+        public List<personne> GetPersonnesByBureau(int id)
+        {
+            return (from p in db.personne where p.id_B == id select p).ToList();
+        }
+
         public personne GetPersonneById(int id)
         {
             return (from c in db.personne where c.id == id select c).FirstOrDefault();
@@ -140,6 +145,35 @@ namespace Projet_GestionCongee.Classe_Metier
              
 
         }
+
+
+        public List<personne> getPersonneConge(int id_bureau)
+        {
+            // Récupérer la date actuelle
+            DateTime currentDate = DateTime.Now;
+
+            // Récupérer les demandes de congé pour le département spécifié et qui ont été acceptées
+            var demandesConge = (from demande in db.demande
+                                 join personne in db.personne on demande.id_pers equals personne.id
+                                 where personne.id_B == id_bureau
+                                 && demande.etat == "accepter"  // Seules les demandes acceptées sont prises en compte
+                                 && demande.date_f > currentDate // La date de fin est supérieure à la date actuelle
+                                 select demande).ToList();
+
+            // Récupérer les personnes associées à ces demandes de congé
+            var personnesEnConge = new List<personne>();
+            foreach (var demande in demandesConge)
+            {
+                var personneConge = db.personne.FirstOrDefault(p => p.id == demande.id_pers);
+                if (personneConge != null)
+                {
+                    personnesEnConge.Add(personneConge);
+                }
+            }
+
+            return personnesEnConge;
+        }
+
 
 
     }

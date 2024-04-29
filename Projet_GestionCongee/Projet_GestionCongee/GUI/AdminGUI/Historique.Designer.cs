@@ -38,13 +38,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabledata = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabledata)).BeginInit();
@@ -170,41 +170,6 @@
             this.panel2.Size = new System.Drawing.Size(148, 491);
             this.panel2.TabIndex = 14;
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label17.Location = new System.Drawing.Point(42, 238);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(61, 16);
-            this.label17.TabIndex = 120;
-            this.label17.Text = "Compte";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(42, 192);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 16);
-            this.label4.TabIndex = 119;
-            this.label4.Text = "Historique";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label16.Location = new System.Drawing.Point(42, 144);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(59, 16);
-            this.label16.TabIndex = 118;
-            this.label16.Text = "Accueil";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
-            // 
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.Teal;
@@ -215,6 +180,7 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 124;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // pictureBox1
             // 
@@ -249,6 +215,41 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 121;
             this.pictureBox9.TabStop = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label17.Location = new System.Drawing.Point(42, 238);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(61, 16);
+            this.label17.TabIndex = 120;
+            this.label17.Text = "Compte";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(42, 192);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 16);
+            this.label4.TabIndex = 119;
+            this.label4.Text = "Historique";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label16.Location = new System.Drawing.Point(42, 144);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(59, 16);
+            this.label16.TabIndex = 118;
+            this.label16.Text = "Accueil";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // pictureBox2
             // 

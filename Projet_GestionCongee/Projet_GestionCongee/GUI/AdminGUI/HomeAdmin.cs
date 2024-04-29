@@ -22,12 +22,18 @@ namespace Projet_GestionCongee.GUI.AdminGUI
 
         private void pictureBox11_Click(object sender, EventArgs e)
         {
+            Login form2 = new Login();
 
+            form2.Show();
+            this.Hide();
         }
 
         private void historique_Click(object sender, EventArgs e)
         {
+            Historique.etatGlobale = "None";
+            Historique.bureauId = -1;
             Historique F = new Historique();
+            
             F.Show();
             this.Hide();
 
@@ -67,36 +73,46 @@ namespace Projet_GestionCongee.GUI.AdminGUI
 
         private void label3_Click(object sender, EventArgs e)
         {
-            Historique F = new Historique();
+            Historique.etatGlobale = "refuser";
+            Historique.bureauId = -1;
+            Historique F = new Historique();            
             F.Show();
             this.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Historique F = new Historique();
+            Historique.bureauId = -1;
+            Historique.etatGlobale = "accepter";
+            Historique F = new Historique();           
             F.Show();
             this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Historique F = new Historique();
+            Historique.etatGlobale = "En attente";
+            Historique.bureauId = -1;
+            Historique F = new Historique();          
             F.Show();
             this.Hide();
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
-            Historique.etatGlobale = "en cours";
-            Historique F = new Historique();
+            AfficheDemande.b_Id = 5;
+
+            AfficheDemande F = new AfficheDemande();          
             F.Show();
             this.Hide();
         }
 
         private void label9_Click_1(object sender, EventArgs e)
         {
-
+            AfficheDemande.b_Id = 7;
+            AfficheDemande F = new AfficheDemande();
+            F.Show();
+            this.Hide();
         }
 
         private void label10_Click(object sender, EventArgs e)
@@ -107,6 +123,38 @@ namespace Projet_GestionCongee.GUI.AdminGUI
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void production_Click(object sender, EventArgs e)
+        {
+            AfficheDemande.b_Id = 6;
+            AfficheDemande F = new AfficheDemande();
+            F.Show();
+            this.Hide();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            AfficheDemande.b_Id = 8;
+            AfficheDemande F = new AfficheDemande();
+            F.Show();
+            this.Hide();
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            AfficheDemande.b_Id = 9;
+            AfficheDemande F = new AfficheDemande();
+            F.Show();
+            this.Hide();
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+            AfficheDemande.b_Id = 10;
+            AfficheDemande F = new AfficheDemande();
+            F.Show();
+            this.Hide();
         }
     }
 }
