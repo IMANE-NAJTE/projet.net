@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projet_GestionCongee.Classe_Metier;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,25 @@ namespace Projet_GestionCongee.GUI.EmployeGUI
 {
     public partial class MesDemandes : Form
     {
+  
+
+        public personne returnPersonne()
+        {
+            int id = Personne.getId();
+            Personne perS = new Personne();
+
+            personne prsonne = perS.GetPersonneById(id);
+            return prsonne;
+
+        }
+
         public MesDemandes()
         {
             InitializeComponent();
+            personne per = returnPersonne();
+            NomU.Text = per.nom + " " + per.prenom;
+
+            //return les demande de cet peronne 
         }
 
       
@@ -62,6 +79,16 @@ namespace Projet_GestionCongee.GUI.EmployeGUI
 
             form2.Show();
             this.Hide();
+        }
+
+        private void MesDemandes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chercherDe_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
