@@ -58,7 +58,7 @@ namespace Projet_GestionCongee
 
                         if (role == "admin")
                         {
-                            AdminHome F =new  AdminHome();
+                            HomeAdmin F =new  HomeAdmin();
                             F.Show();
                             this.Hide();
     

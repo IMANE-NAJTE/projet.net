@@ -196,6 +196,7 @@
             this.label17.Size = new System.Drawing.Size(61, 16);
             this.label17.TabIndex = 120;
             this.label17.Text = "Compte";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // historique
             // 

@@ -107,9 +107,7 @@ namespace Projet_GestionCongee.GUI.AdminGUI
 
         private void label17_Click(object sender, EventArgs e)
         {
-            CompteAdmin form2 = new CompteAdmin();
-            form2.Show();
-            this.Hide();
+            
         }
     }
 }
