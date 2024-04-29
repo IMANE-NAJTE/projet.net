@@ -156,5 +156,10 @@ namespace Projet_GestionCongee.GUI.AdminGUI
             F.Show();
             this.Hide();
         }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
